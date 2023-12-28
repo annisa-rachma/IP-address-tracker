@@ -16,21 +16,63 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 </head>
-<body class="">
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+<body class="w-full h-dvh top-0 bottom-0">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="flex flex-col w-100vw h-dvh absolute">
+    <img src="./images/pattern-bg-mobile.png" alt="pattern background" class="object-fill w-full  -z-10 ">
+    <div class="flex-1">
+      <img src="./images/banner-image.png" alt="" class="-z-20 object-cover w-auto h-full">
+    </div>
   </div>
+  
+  <div class="p-6 relative">
+    <div class="text-center flex flex-col gap-6">
+      <h1 class="text-white text-2xl font-semibold ">
+        IP Address Tracker
+      </h1>
+      <div id="searchBar" class="bg-white rounded-xl h-[3.25rem] flex overflow-hidden justify-between">
+        <input type="text" class="py-2 px-4 flex-1" placeholder="Search for any IP address or domain">
+        <button class="bg-black w-14 h-full grid place-content-center">
+          <img src="./images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+      <div class="bg-white rounded-xl flex flex-col p-6 gap-4">
+        <div>
+          <p class="font-medium text-slate-500 text-sm">
+            IP Address
+          </p>
+          <h3 class="font-semibold text-xl text-gray-950">192.212.174.101</h3>
+        </div>
+        <div>
+          <p class="font-medium text-slate-500 text-sm">
+            Location
+          </p>
+          <h3 class="font-semibold text-xl text-gray-950">Brooklyn, NY 10001</h3>
+        </div>
+        <div>
+          <p class="font-medium text-slate-500 text-sm">
+              Timezone
+            UTC <!-- add offset value dynamically using the API -->
+          </p>
+          <h3 class="font-semibold text-xl text-gray-950">UTC-05:00</h3>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-500 text-sm">
+            ISP
+          </p>
+          <h3 class="font-semibold text-xl">SpaceX Starlink</h3>
+        </div>
+      </div>
+    </div>
+  
+    
+    <footer class="bottom-0 text-center fixed">
+      <div class="attribution ">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </div>
+  
 </body>
 </html>
